@@ -161,5 +161,21 @@ namespace Platformer.Mechanics
             InFlight,
             Landed
         }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Aux01"))
+            {
+                AudioManager.Instance.CheckColiision(AudioType.Aux01);
+            }
+            else if (collision.CompareTag("Aux02"))
+            {
+                AudioManager.Instance.CheckColiision(AudioType.Aux02);
+            }
+            else if (collision.CompareTag("Aux03"))
+            {
+                AudioManager.Instance.CheckColiision(AudioType.Aux03);
+            }
+        }
     }
 }
