@@ -103,7 +103,16 @@ namespace Platformer.Mechanics
         {
             //if already falling, fall faster than the jump speed, otherwise use normal gravity.
             if (velocity.y < 0)
-                velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
+            {
+                if(GameController.Instance.cinematic1)
+                {
+                    velocity = Physics2D.gravity * 1.5f;
+                }
+                else
+                {
+                    velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
+                }
+            }
             else
                 velocity += Physics2D.gravity * Time.deltaTime;
 

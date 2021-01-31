@@ -58,6 +58,11 @@ namespace Platformer.Mechanics
 
         protected override void Update()
         {
+            if(GameController.Instance.cinematic1)
+            {
+
+            }
+
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");

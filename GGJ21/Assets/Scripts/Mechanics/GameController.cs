@@ -18,6 +18,8 @@ namespace Platformer.Mechanics
         //through the simulation and events. Unity will deserialize over this
         //shared reference when the scene loads, allowing the model to be
         //conveniently configured inside the inspector.
+        public bool isPlaying = false;
+        public bool cinematic1 = true;
         public PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 
         void OnEnable()
