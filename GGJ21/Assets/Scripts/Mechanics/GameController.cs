@@ -1,6 +1,6 @@
 using Platformer.Core;
 using Platformer.Model;
-using System;
+using DG.Tweening;
 using UnityEngine;
 
 namespace Platformer.Mechanics
@@ -12,6 +12,7 @@ namespace Platformer.Mechanics
     public class GameController : MonoBehaviour
     {
         public static GameController Instance { get; private set; }
+        public CanvasGroup pauseCG;
 
         //This model field is public and can be therefore be modified in the 
         //inspector.
@@ -38,7 +39,7 @@ namespace Platformer.Mechanics
         {
             if (Instance == this) Simulation.Tick();
 
-            if(Input.GetKeyDown("Menu"))
+            if(!cinematic1 && Input.GetButtonDown("Menu"))
             {
                 OnPausePressed();
             }
@@ -48,7 +49,22 @@ namespace Platformer.Mechanics
         {
             isPaused = !isPaused;
 
-            Time.timeScale = isPaused ? 0 : 1;
+            if(isPaused)
+            {
+                Time.timeScale = 0;
+
+                pauseCG.DOFade(1, 0.5f).SetUpdate(true).OnComplete(() =>
+                {
+                    pauseCG.blocksRaycasts = true;
+                });
+            }
+            else
+            {
+                Time.timeScale = 1;
+                pauseCG.blocksRaycasts = false;
+
+                pauseCG.DOFade(0, 0.5f);
+            }
         }
 
         public void StopCinematic1()
