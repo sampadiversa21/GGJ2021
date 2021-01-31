@@ -36,5 +36,10 @@ namespace Platformer.Mechanics
         {
             if (Instance == this) Simulation.Tick();
         }
+
+        public void StopCinematic1()
+        {
+            cinematic1 = false;
+        }
     }
 }
