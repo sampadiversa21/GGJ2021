@@ -39,6 +39,8 @@ namespace Platformer.Mechanics
 
         private int jumpCount = 0;
 
+        public bool isPecking = false;
+
         bool jump;
         Vector2 move;
         SpriteRenderer spriteRenderer;
@@ -72,6 +74,17 @@ namespace Platformer.Mechanics
                     stopJump = true;
                     Schedule<PlayerStopJump>().player = this;
                 }
+
+                if (Input.GetButtonDown("Peck"))
+                {
+                    isPecking = true;
+                }
+                else if(Input.GetButtonUp("Peck"))
+                {
+                    isPecking = false;
+                }
+
+                animator.SetBool("pecking", isPecking);
             }
             else
             {
