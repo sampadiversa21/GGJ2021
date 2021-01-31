@@ -177,3 +177,17 @@ MonoBehaviour:
     - {fileID: -7498164051254646585, guid: 91c6ca4d40f1987438c22df910a63d0b, type: 3}
     - {fileID: -5723644127189286631, guid: 91c6ca4d40f1987438c22df910a63d0b, type: 3}
     - {fileID: 5615418565739990628, guid: 91c6ca4d40f1987438c22df910a63d0b, type: 3}
+  - emoteName: frog
+    emoteFrameLife: 1
+    emoteTotalLife: 10
+    emoteMaxLoops: 3
+    emotePingPong: 0
+    emoteSprites:
+    - {fileID: 21300000, guid: e8865ea0271319e40851ba91d7876bdd, type: 3}
+  - emoteName: picapar
+    emoteFrameLife: 1
+    emoteTotalLife: 10
+    emoteMaxLoops: 3
+    emotePingPong: 0
+    emoteSprites:
+    - {fileID: 21300000, guid: 388684d996dd3f34e9f3be5f8cb818f5, type: 3}

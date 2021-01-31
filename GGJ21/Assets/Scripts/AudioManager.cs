@@ -5,13 +5,19 @@ public enum AudioType
 {
     Aux01,
     Aux02,
-    Aux03
+    Aux03,
+}
+
+public enum SFXType
+{
+    Click,
+    Pause,
+    Play,
 }
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
-
 
     public AudioMixerSnapshot menuSnapshot;
     public AudioMixerSnapshot idleSnapshot;
@@ -20,6 +26,7 @@ public class AudioManager : MonoBehaviour
     public AudioMixerSnapshot aux02Snapshot;
     public AudioMixerSnapshot aux03Snapshot;
 
+    public AudioSource sfxAudioSource;
     public AudioSource menuAudioSource;
     public AudioSource transitionAudioSource;
     public AudioSource backgrundMusicAudioSource;
@@ -61,6 +68,12 @@ public class AudioManager : MonoBehaviour
                 idleSnapshot.TransitionTo(-0.1f);
             }
         }
+    }
+
+    public void PlaySFX(AudioClip clip)
+    {
+        sfxAudioSource.clip = clip;
+        sfxAudioSource.Play();
     }
 
     public void CheckColiision(AudioType type)
