@@ -58,10 +58,16 @@ namespace Platformer.Mechanics
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
+            animator.SetBool("falling", true);
         }
 
         protected override void Update()
         {
+            if(animator.GetBool("falling") && IsGrounded)
+            {
+                animator.SetBool("falling", false);
+            }
+
             if (controlEnabled && !GameController.Instance.cinematic1)
             {
                 move.x = Input.GetAxis("Horizontal");
