@@ -25,6 +25,9 @@ namespace Platformer.Mechanics
         public bool cinematic1 = true;
         public PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 
+        public AudioClip playSfx;
+        public AudioClip pauseSfx;
+
         void OnEnable()
         {
             Instance = this;
@@ -51,6 +54,7 @@ namespace Platformer.Mechanics
 
             if(isPaused)
             {
+                AudioManager.Instance.PlaySFX(pauseSfx);
                 Time.timeScale = 0;
 
                 pauseCG.DOFade(1, 0.5f).SetUpdate(true).OnComplete(() =>
@@ -61,6 +65,8 @@ namespace Platformer.Mechanics
             else
             {
                 Time.timeScale = 1;
+                AudioManager.Instance.PlaySFX(playSfx);
+
                 pauseCG.blocksRaycasts = false;
 
                 pauseCG.DOFade(0, 0.5f);
