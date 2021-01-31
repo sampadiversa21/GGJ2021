@@ -38,8 +38,11 @@ public class MushroomControl : MonoBehaviour
 
             if (upContact)
             {
+                float volume = 0.3f;
+
                 if (Input.GetButton("Jump"))
                 {
+                    volume = 1f;
                     player.Bounce(jumpBounce);
                     animator.SetBool("bouncing", true);
                 }
@@ -47,6 +50,8 @@ public class MushroomControl : MonoBehaviour
                 {
                     player.Bounce(normalBounce);
                 }
+
+                player.audioSource.PlayOneShot(player.mushroomJumpAudio, volume);
 
             }
         }
