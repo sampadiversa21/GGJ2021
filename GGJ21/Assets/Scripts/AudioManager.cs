@@ -58,7 +58,7 @@ public class AudioManager : MonoBehaviour
                 aux01AudioSource.Play();
                 aux02AudioSource.Play();
                 aux03AudioSource.Play();
-                idleSnapshot.TransitionTo(0f);
+                idleSnapshot.TransitionTo(-0.1f);
             }
         }
     }
