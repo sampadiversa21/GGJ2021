@@ -34,8 +34,7 @@ namespace Platformer.Mechanics
         public Health health;
         public bool controlEnabled = true;
 
-        [SerializeField]
-        private int maxJumpCount = 1;
+        public int maxJumpCount = 1;
 
         private int jumpCount = 0;
 
@@ -65,14 +64,11 @@ namespace Platformer.Mechanics
                 move.x = Input.GetAxis("Horizontal");
                 if (Input.GetButtonDown("Jump") && jumpCount < maxJumpCount)
                 {
-                    jumpState = JumpState.PrepareToJump;
-
-                    jumpCount++;
+                    InitJump();
                 }
                 else if (Input.GetButtonUp("Jump"))
                 {
-                    stopJump = true;
-                    Schedule<PlayerStopJump>().player = this;
+                    EndJump();
                 }
 
                 if (Input.GetButtonDown("Peck"))
@@ -128,6 +124,46 @@ namespace Platformer.Mechanics
         protected override void ComputeVelocity()
         {
             //if (jump && IsGrounded)
+            if (jump && jumpCount <= maxJumpCount)
+            {
+                velocity.y = jumpTakeOffSpeed * model.jumpModifier;
+                jump = false;
+            }
+            else if (stopJump)
+            {
+                stopJump = false;
+                if (velocity.y > 0)
+                {
+                    velocity.y = velocity.y * model.jumpDeceleration;
+                }
+            }
+
+            if (move.x > 0.01f)
+                spriteRenderer.flipX = false;
+            else if (move.x < -0.01f)
+                spriteRenderer.flipX = true;
+
+            animator.SetBool("grounded", IsGrounded);
+            animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+
+            targetVelocity = move * maxSpeed;
+        }
+
+        public void InitJump()
+        {
+            jumpState = JumpState.PrepareToJump;
+
+            jumpCount++;
+        }
+
+        public void EndJump()
+        {
+            stopJump = true;
+            Schedule<PlayerStopJump>().player = this;
+        }
+
+        public void MushBounce()
+        {
             if (jump && jumpCount <= maxJumpCount)
             {
                 velocity.y = jumpTakeOffSpeed * model.jumpModifier;
