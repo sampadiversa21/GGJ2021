@@ -84,6 +84,12 @@ namespace Platformer.Mechanics
                 }
 
                 animator.SetBool("pecking", isPecking);
+
+                if (isPecking)
+                {
+                    if(!audioSource.isPlaying)
+                        audioSource.PlayOneShot(peckAudio);
+                }
             }
             else
             {
