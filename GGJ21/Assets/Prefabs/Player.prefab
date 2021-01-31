@@ -62,7 +62,7 @@ MonoBehaviour:
   mushroomJumpAudio: {fileID: 8300000, guid: d1dc17b6603cad04da6b68a4aa862b26, type: 3}
   peckAudio: {fileID: 8300000, guid: fc78c40602abe6f499c2d51736944f71, type: 3}
   maxSpeed: 3
-  jumpTakeOffSpeed: 9
+  jumpTakeOffSpeed: 7
   jumpState: 0
   collider2d: {fileID: 0}
   audioSource: {fileID: 0}
