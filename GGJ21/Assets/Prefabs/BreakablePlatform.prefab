@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8465733402344405744}
   - component: {fileID: 8465733402344405746}
   m_Layer: 0
-  m_Name: PlatformExample
+  m_Name: BreakablePlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   breakTime: 1
   resetTime: 3
   fallSpeed: 10
-  fallAngSpeed: 200
+  fallAngSpeed: -200
   resetOnLeave: 1
   timeAsSpring: 1
   shakeTimeStep: 0.08
@@ -95,13 +95,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2524718413739936105, guid: 12cd11230fa339349ab6a9b6a39f62d3,
+  m_Sprite: {fileID: 1011251799280196240, guid: 12cd11230fa339349ab6a9b6a39f62d3,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -120,16 +120,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4}
+  m_Offset: {x: 0.3922987, y: 0.4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 4, y: 1}
+    newSize: {x: 4, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.2}
+  m_Size: {x: 3.2111397, y: 0.19999999}
   m_EdgeRadius: 0
