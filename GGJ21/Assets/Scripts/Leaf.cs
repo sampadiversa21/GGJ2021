@@ -6,9 +6,8 @@ public class Leaf : MonoBehaviour
 {
     public bool randomizeGravity = false;
     public float minGravityValue = 0.2f;
-    public float maxGravityValue = 5f;
+    public float maxGravityValue = 2f;
     private Rigidbody2D rb;
-    private float gravityScale = 1;
 
     private void OnEnable()
     {
