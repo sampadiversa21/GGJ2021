@@ -1,9 +1,11 @@
 ﻿using DG.Tweening;
 using Platformer.Mechanics;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
+    public Image logo;
     public CanvasGroup creditsCG;
     public CanvasGroup buttonsCG;
 
@@ -32,7 +34,8 @@ public class UIController : MonoBehaviour
     public void OnPlayClicked()
     {
         GameController.Instance.StopCinematic1();
-        
+
+        logo.DOFade(0, 0.5f);
         buttonsCG.DOFade(0, 0.5f).OnComplete(() =>
         {
             buttonsCG.blocksRaycasts = false;
