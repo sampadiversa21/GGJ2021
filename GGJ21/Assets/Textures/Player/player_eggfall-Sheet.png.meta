@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: bb2e78da71cee9b4789fc332324f0dd2
+guid: 2f5240425e1033247949d9b199907b81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4709538698555495040
-    second: woodpecker-preFly_0
+      213: -1662526626873805251
+    second: player_eggfall-Sheet_0
   - first:
-      213: -6473690783726483377
-    second: woodpecker-preFly_1
+      213: -1061842311944955174
+    second: player_eggfall-Sheet_1
   - first:
-      213: 5125441357257490644
-    second: woodpecker-preFly_2
-  - first:
-      213: -8578341999320707081
-    second: woodpecker-preFly_3
+      213: -3784274883983500706
+    second: player_eggfall-Sheet_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,12 +108,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: woodpecker-preFly_0
+      name: player_eggfall-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
+        width: 15
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -125,19 +122,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08de4a0818b54aeb0800000000000000
-      internalID: -4709538698555495040
+      spriteID: d36fe8f57d48de8e0800000000000000
+      internalID: -1662526626873805251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: woodpecker-preFly_1
+      name: player_eggfall-Sheet_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 15
         y: 0
-        width: 16
+        width: 15
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -146,19 +143,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4843420884d826a0800000000000000
-      internalID: -6473690783726483377
+      spriteID: ada9a0d0b049341f0800000000000000
+      internalID: -1061842311944955174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: woodpecker-preFly_2
+      name: player_eggfall-Sheet_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 30
         y: 0
-        width: 16
+        width: 15
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -167,29 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d0cd6832c9312740800000000000000
-      internalID: 5125441357257490644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: woodpecker-preFly_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ffcca0d66b93f880800000000000000
-      internalID: -8578341999320707081
+      spriteID: e5a1bbffa0e8b7bc0800000000000000
+      internalID: -3784274883983500706
       vertices: []
       indices: 
       edges: []
