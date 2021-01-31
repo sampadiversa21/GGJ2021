@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - FallLimit
+  - Aux01
+  - Aux02
+  - Aux03
   layers:
   - Default
   - TransparentFX
