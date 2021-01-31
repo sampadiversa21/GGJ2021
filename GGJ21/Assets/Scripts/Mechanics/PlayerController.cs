@@ -34,6 +34,11 @@ namespace Platformer.Mechanics
         public Health health;
         public bool controlEnabled = true;
 
+        [SerializeField]
+        private int maxJumpCount = 1;
+
+        private int jumpCount = 0;
+
         bool jump;
         Vector2 move;
         SpriteRenderer spriteRenderer;
@@ -56,8 +61,12 @@ namespace Platformer.Mechanics
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");
-                if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
+                if (Input.GetButtonDown("Jump") && jumpCount < maxJumpCount)
+                {
                     jumpState = JumpState.PrepareToJump;
+
+                    jumpCount++;
+                }
                 else if (Input.GetButtonUp("Jump"))
                 {
                     stopJump = true;
@@ -98,13 +107,15 @@ namespace Platformer.Mechanics
                     break;
                 case JumpState.Landed:
                     jumpState = JumpState.Grounded;
+                    jumpCount = 0;
                     break;
             }
         }
 
         protected override void ComputeVelocity()
         {
-            if (jump && IsGrounded)
+            //if (jump && IsGrounded)
+            if (jump && jumpCount <= maxJumpCount)
             {
                 velocity.y = jumpTakeOffSpeed * model.jumpModifier;
                 jump = false;
