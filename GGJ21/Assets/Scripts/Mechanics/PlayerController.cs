@@ -60,7 +60,7 @@ namespace Platformer.Mechanics
 
         protected override void Update()
         {
-            if (controlEnabled)
+            if (controlEnabled && !GameController.Instance.cinematic1)
             {
                 move.x = Input.GetAxis("Horizontal");
                 if (Input.GetButtonDown("Jump") && jumpCount < maxJumpCount)
