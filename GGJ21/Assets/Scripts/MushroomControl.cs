@@ -42,7 +42,6 @@ public class MushroomControl : MonoBehaviour
                 {
                     player.Bounce(jumpBounce);
                     animator.SetBool("bouncing", true);
-                    Debug.Log("Bounce");
                 }
                 else
                 {
