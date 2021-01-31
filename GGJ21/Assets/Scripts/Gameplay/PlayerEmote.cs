@@ -22,6 +22,11 @@ public class PlayerEmote : MonoBehaviour
         UpdateSprite(null);
     }
 
+    public static void PlayPlayerEmote(string emote)
+    {
+        FindObjectOfType<Platformer.Mechanics.PlayerController>().gameObject.GetComponentInChildren<PlayerEmote>().Play(emote);
+    }
+
     public void Play(string emote)
     {
         int index = -1;
