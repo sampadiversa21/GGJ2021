@@ -932,6 +932,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5683853640307254729, guid: 3f485d6976d56cb4588b1b469a6c2d6d,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5683853640318834042, guid: 3f485d6976d56cb4588b1b469a6c2d6d,
         type: 3}
       propertyPath: m_RootOrder
@@ -991,6 +996,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5683853640937800638, guid: 3f485d6976d56cb4588b1b469a6c2d6d,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5683853640985420991, guid: 3f485d6976d56cb4588b1b469a6c2d6d,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5683853642028921759, guid: 3f485d6976d56cb4588b1b469a6c2d6d,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5683853642143883347, guid: 3f485d6976d56cb4588b1b469a6c2d6d,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5683853642311559477, guid: 3f485d6976d56cb4588b1b469a6c2d6d,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f485d6976d56cb4588b1b469a6c2d6d, type: 3}
