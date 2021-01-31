@@ -127,12 +127,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emoteRenderer: {fileID: 708704583}
   emotes:
-  - emoteName: test
+  - emoteName: confused
     emoteFrameLife: 0.2
     emoteTotalLife: 10
     emoteMaxLoops: 3
-    emotePingPong: 1
+    emotePingPong: 0
     emoteSprites:
-    - {fileID: 21300000, guid: 225a1eacac9dc41ae9a4d6adf7df8d40, type: 3}
-    - {fileID: 21300004, guid: 225a1eacac9dc41ae9a4d6adf7df8d40, type: 3}
-    - {fileID: 21300008, guid: 225a1eacac9dc41ae9a4d6adf7df8d40, type: 3}
+    - {fileID: 1897323081457484727, guid: 9ddb2ddeaa54ac144962225c2e2cee3e, type: 3}
+    - {fileID: -4038706643987607282, guid: 9ddb2ddeaa54ac144962225c2e2cee3e, type: 3}
+    - {fileID: 7768450798252302728, guid: 9ddb2ddeaa54ac144962225c2e2cee3e, type: 3}
+    - {fileID: -7251067815387303261, guid: 9ddb2ddeaa54ac144962225c2e2cee3e, type: 3}
+  - emoteName: family
+    emoteFrameLife: 0.2
+    emoteTotalLife: 10
+    emoteMaxLoops: 3
+    emotePingPong: 0
+    emoteSprites:
+    - {fileID: -9114125843919166406, guid: 1c099d9326875d34487f2495cfa0bf41, type: 3}
+    - {fileID: 8169016055265031333, guid: 1c099d9326875d34487f2495cfa0bf41, type: 3}
+    - {fileID: -5733329877333914806, guid: 1c099d9326875d34487f2495cfa0bf41, type: 3}
+    - {fileID: -5733329877333914806, guid: 1c099d9326875d34487f2495cfa0bf41, type: 3}
+  - emoteName: happy
+    emoteFrameLife: 0.2
+    emoteTotalLife: 10
+    emoteMaxLoops: 3
+    emotePingPong: 0
+    emoteSprites:
+    - {fileID: -6842131902617023859, guid: aa3a4a53e700cd84c8b45198654a4a55, type: 3}
+    - {fileID: 8806913483647217074, guid: aa3a4a53e700cd84c8b45198654a4a55, type: 3}
+    - {fileID: 4124030499823533968, guid: aa3a4a53e700cd84c8b45198654a4a55, type: 3}
+    - {fileID: -5735627324929320709, guid: aa3a4a53e700cd84c8b45198654a4a55, type: 3}
+  - emoteName: sad
+    emoteFrameLife: 0.2
+    emoteTotalLife: 10
+    emoteMaxLoops: 3
+    emotePingPong: 0
+    emoteSprites:
+    - {fileID: 8604914488806033122, guid: 32e26e65b4bdfed4780554bf9fa17fc8, type: 3}
+    - {fileID: -8994960114955941764, guid: 32e26e65b4bdfed4780554bf9fa17fc8, type: 3}
+    - {fileID: 3517344216103198084, guid: 32e26e65b4bdfed4780554bf9fa17fc8, type: 3}
+    - {fileID: -6456191813402636732, guid: 32e26e65b4bdfed4780554bf9fa17fc8, type: 3}
+  - emoteName: thinking
+    emoteFrameLife: 0.2
+    emoteTotalLife: 10
+    emoteMaxLoops: 3
+    emotePingPong: 0
+    emoteSprites:
+    - {fileID: -7651490131018985702, guid: 91c6ca4d40f1987438c22df910a63d0b, type: 3}
+    - {fileID: -7498164051254646585, guid: 91c6ca4d40f1987438c22df910a63d0b, type: 3}
+    - {fileID: -5723644127189286631, guid: 91c6ca4d40f1987438c22df910a63d0b, type: 3}
+    - {fileID: 5615418565739990628, guid: 91c6ca4d40f1987438c22df910a63d0b, type: 3}
