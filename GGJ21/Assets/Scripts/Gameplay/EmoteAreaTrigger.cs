@@ -8,6 +8,7 @@ public class EmoteAreaTrigger : MonoBehaviour
     public bool triggerOnlyOnce = false;
     public bool triggered = false;
 
+    public PlayerEmote targetOverride;
 
     private void Start()
     {
@@ -35,17 +36,22 @@ public class EmoteAreaTrigger : MonoBehaviour
         if (triggerOnlyOnce && triggered)
             return;
 
-        if (collision.GetComponent<PlayerEmote>())
+        if (targetOverride)
+            targetOverride.Play(emote);
+        else
         {
-            collision.GetComponent<PlayerEmote>().Play(emote);
-        }
-        else if (collision.GetComponentInChildren<PlayerEmote>())
-        {
-            collision.GetComponentInChildren<PlayerEmote>().Play(emote);
-        }
-        else if (collision.GetComponentInParent<PlayerEmote>())
-        {
-            collision.GetComponentInParent<PlayerEmote>().Play(emote);
+            if (collision.GetComponent<PlayerEmote>())
+            {
+                collision.GetComponent<PlayerEmote>().Play(emote);
+            }
+            else if (collision.GetComponentInChildren<PlayerEmote>())
+            {
+                collision.GetComponentInChildren<PlayerEmote>().Play(emote);
+            }
+            else if (collision.GetComponentInParent<PlayerEmote>())
+            {
+                collision.GetComponentInParent<PlayerEmote>().Play(emote);
+            }
         }
 
         triggered = true;
