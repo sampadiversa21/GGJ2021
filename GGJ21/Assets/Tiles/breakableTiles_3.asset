@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TileFloatingTileMiddle
+  m_Name: breakableTiles_3
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 8580305517835840419, guid: 3fca823d91d9f9f478a7d21d1dbad012,
+  m_Sprite: {fileID: -4169006898997291890, guid: 6c060377304848d4b9b5bfca4776be09,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
