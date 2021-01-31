@@ -326,7 +326,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 16
-        width: 16
+        width: 64
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -342,12 +342,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forestTiles2_16
+      name: forestTiles2_13
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
+        width: 64
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -484,132 +484,6 @@ TextureImporter:
       bones: []
       spriteID: bf4616c711f8cffb0800000000000000
       internalID: -4612654613070256901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: forestTiles2_13
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7e10df1984aa1b70800000000000000
-      internalID: 8870583324910820991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: forestTiles2_14
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bb1b92c8cac61780800000000000000
-      internalID: -8712553465494430792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: forestTiles2_15
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02eb89bcd33ccced0800000000000000
-      internalID: -2392322631864369632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: forestTiles2_17
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14f2afb30d2469320800000000000000
-      internalID: 2564310499960958785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: forestTiles2_18
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edb5e231cce4cf400800000000000000
-      internalID: 359248708684897246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: forestTiles2_19
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b4bfde53d308ef70800000000000000
-      internalID: 9216620843778421938
       vertices: []
       indices: 
       edges: []
