@@ -41,7 +41,11 @@ namespace Platformer.Mechanics
 
         private int jumpCount = 0;
 
+        [HideInInspector]
         public bool isPecking = false;
+
+        [HideInInspector]
+        public bool canPeckAlready = false;
 
         bool jump;
         Vector2 move;
@@ -80,7 +84,7 @@ namespace Platformer.Mechanics
                     EndJump();
                 }
 
-                if (Input.GetButtonDown("Peck"))
+                if (canPeckAlready && Input.GetButtonDown("Peck"))
                 {
                     isPecking = true;
                 }
