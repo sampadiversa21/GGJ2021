@@ -44,7 +44,6 @@ namespace Platformer.Mechanics
         [HideInInspector]
         public bool isPecking = false;
 
-        [HideInInspector]
         public bool canPeckAlready = false;
 
         bool jump;
