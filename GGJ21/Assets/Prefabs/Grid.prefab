@@ -33786,7 +33786,7 @@ PrefabInstance:
     - target: {fileID: 1185662773062784962, guid: 5e5473e1ce077d642a3aa5bdc78bb7fa,
         type: 3}
       propertyPath: m_Name
-      value: ObjectVisibilityTrigger
+      value: T_Visibility_Disable_Frog1
       objectReference: {fileID: 0}
     - target: {fileID: 2107389642837476884, guid: 5e5473e1ce077d642a3aa5bdc78bb7fa,
         type: 3}
@@ -33881,7 +33881,7 @@ PrefabInstance:
     - target: {fileID: 1185662773062784962, guid: 5e5473e1ce077d642a3aa5bdc78bb7fa,
         type: 3}
       propertyPath: m_Name
-      value: ObjectVisibilityTrigger (2)
+      value: T_Visibility_Disable_Frog3
       objectReference: {fileID: 0}
     - target: {fileID: 2107389642837476884, guid: 5e5473e1ce077d642a3aa5bdc78bb7fa,
         type: 3}
@@ -33976,7 +33976,7 @@ PrefabInstance:
     - target: {fileID: 1185662773062784962, guid: 5e5473e1ce077d642a3aa5bdc78bb7fa,
         type: 3}
       propertyPath: m_Name
-      value: ObjectVisibilityTrigger (1)
+      value: T_Visibility_Disable_Frog2
       objectReference: {fileID: 0}
     - target: {fileID: 2107389642837476884, guid: 5e5473e1ce077d642a3aa5bdc78bb7fa,
         type: 3}
